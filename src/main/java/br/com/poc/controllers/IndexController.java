@@ -1,5 +1,7 @@
 package br.com.poc.controllers;
 
+import java.security.Principal;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -11,8 +13,8 @@ public class IndexController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	@ResponseBody
-	public String index() {		
-        return "teste";
+	public String index(Principal principal) {		
+        return principal.getName();
 	}
 
 }

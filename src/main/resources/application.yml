@@ -1,0 +1,12 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github-client-1:
+            client-id: 6828270149311052
+            client-secret: KWOCeKnWQNc4spnQxQ9zrjqI9rkv7Sff
+            client-name: mercadolivre user
+            provider: mercadolivre
+            scope: user
+            redirect-uri-template: https://floating-bayou-67839.herokuapp.com/
